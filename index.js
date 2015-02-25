@@ -4,7 +4,10 @@
 var Transform = require('stream').Transform
 require('utildot').inherits(thr, Transform)
 
-module.exports = thru
+module.exports = function (fn,flush) { return new thr(fn, flush) }
 
-function thru(fn){ return new thr(fn) }
-function thr(fn){ this._transform = fn; Transform.call(this) }
+function thr(fn,flush){
+  if(flush) this._flush = flush
+  this._transform = fn
+  Transform.call(this)
+}
