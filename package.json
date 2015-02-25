@@ -1,0 +1,26 @@
+{
+  "name":           "thr",
+  "version":        "0.0.1",
+  "description":    "reduced overhead transform stream",
+  "repository": {
+    "type":         "git",
+    "url":          "https://github.com/reqshark/thr"
+  },
+  "author": {
+    "name":         "Bent Cardan",
+    "email":        "bent@nothingsatisfies.com",
+    "url":          "http://req.link"
+  },
+  "devDependencies": {
+    "tape":         "~3.5.0",
+    "tap-spec":     "~2.2.1"
+  },
+  "scripts": {
+    "test":         "node test | tap-spec"
+  },
+  "license":        "martiniware",
+  "keywords": [
+    "through",
+    "stream"
+  ]
+}
