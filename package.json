@@ -1,6 +1,6 @@
 {
   "name":           "thr",
-  "version":        "0.0.1",
+  "version":        "0.0.2",
   "description":    "reduced overhead transform stream",
   "repository": {
     "type":         "git",
@@ -10,6 +10,9 @@
     "name":         "Bent Cardan",
     "email":        "bent@nothingsatisfies.com",
     "url":          "http://req.link"
+  },
+  "dependencies":{
+    "utildot":""
   },
   "devDependencies": {
     "tape":         "~3.5.0",

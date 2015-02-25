@@ -1,6 +1,8 @@
 /**
  * reduced overhead transform stream
  */
+var Transform = require('stream').Transform
+require('utildot').inherits(thr, Transform)
 
 module.exports = thru
 
