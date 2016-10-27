@@ -17,7 +17,8 @@ var t  = thr(function (msg, _, cb) {
 
   //callback moves stream forward to next chunk
   cb()
-})
+}, null, {objectMode:true}) // the default is objectMode:true
+// btw `null`, and `opts` here after the function are both optional
 
 //pipe to it from some source stream, like readable
 readable.pipe(t)
